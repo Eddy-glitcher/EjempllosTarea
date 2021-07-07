@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .ventana{
+            background: rebeccapurple;
+            max-width: 200px;
+            text-align: center;
+            border: solid 3px #000;
+            border-radius: 10px;
+        }
+        .ventana:hover{
+            cursor: pointer;
+        }
+        .enfocar{
+            background: cyan;
+            width: 160px;
+            height: 100px;
+            text-align: center;
+            
+        }
+        .contenedor{
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: relative;
+        }
+        .contenedor .caja{
+            width: 50px;
+            height: 50px;
+            background: blue;
+            position: absolute;
+        }
+        .container .caja{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            margin: 10px;
+            display: inline-block;
+        }
+        .cajaPadre{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: orange;
+        }
+    </style>
+    
+</head>
+<body id="fondo">
+
+    <div class="ventana">Alert</div> <br>
+    <div id="enfocar" class="enfocar">click para ver mensaje oculto</div> <br>
+    <div id="cambiarColor" class="enfocar">cambiar de color</div>
+    <button id="cambiarTexto">Cambiar color del div</button>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <h1 class="titulo" id="titulo">Cambiando los colores del fondo del documento</h1>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="verde" id="verde" class="form-chek-input" >
+                        <label for="verde" class="form-check-label">verde</label>
+                    </div>
+
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="verde" id="morado" class="form-chek-input">
+                        <label for="morado" class="form-check-label">Morado</label>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="caja">
+
+            </div>
+        </div>
+        <br>
+
+        <div class="caja">
+           
+            <ul class="lista"> 
+                
+            </ul>
+            <button class="dobleclick btn-primary">has un click aquí para ver mis compañero de clase</button>
+        </div>
+
+        <div class="irALink">
+            <button id="ir" class="btn-secondary mt-4">Click para ir a pagina de bootstrap</button>
+        </div>
+
+        <div class="multicolor enfocar mt-4">
+            click para ver un color con setInnterval
+        </div><br>
+
+        <button id="boton">Pulsa para crear otra caja</button>
+        <div class="container" id ="container">
+            <div class="caja">
+
+            </div>
+        </div> <br>
+
+        <div id ="cajaPadre" class="cajaPadre">
+            <p>Pon el mouse sobre mi para ver un nuevo color, sacalo para voler al color anterior</p>
+        </div>
+    <script src="ajax.js"></script>
+</body>
+</html>
+
